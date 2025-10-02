@@ -6,7 +6,7 @@ public class EjAranha {
         int distancia = 0;
         boolean sobrevivio = false;
 
-        System.out.println(" Bienvenidos a la historia de una peculiar aranha");
+        System.out.println(" Bienvenidos a la historia de una peculiar aranha ");
 
         System.out.println(" ¿ Cual es el nombre de la aranha ? ");
         Scanner sc = new Scanner(System.in);
@@ -14,13 +14,11 @@ public class EjAranha {
         System.out.println( nombre + " Entra en la clase de DAM muy silenciosamente y escala hasta el techo");
 
         System.out.println(" ¿Que hace Samuel tras entrar al aula? ");
-        Scanner sc2 = new Scanner(System.in);
-        String hacer = sc2.nextLine();
+        int respuesta = sc.nextInt();
+
         // Investiga que hacen los alumnos y para hacerlo de la mejor manera posible se acerca a las pantallas colgandose de su tela
 
         System.out.println(" ¿Qué hace ahora? " + nombre);
-        Scanner sc3 = new Scanner(System.in);
-        String ahora = sc3.nextLine();
         int decision = sc.nextInt();
 
 
@@ -48,9 +46,7 @@ public class EjAranha {
     System.out.println( nombre + " escapa y sobrevive ");
         }
     System.out.println(" ¿Qué tiene en mente? " + nombre);
-    Scanner sc4 = new Scanner(System.in);
-    String sobrevive = sc4.nextLine();
-    int decision3 = sc4.nextInt();
+    int decision3 = sc.nextInt();
 
   if (decision3 == 1 && decision2 == 2){;
             vida -= 0;
